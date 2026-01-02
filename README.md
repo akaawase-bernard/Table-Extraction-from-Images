@@ -37,12 +37,12 @@ The debug figure shows:
 
 ## Features
 
-- ✅ Works on tables **without grid lines**
-- ✅ Handles scans / phone photos / screenshots
-- ✅ Removes false columns (units, punctuation, empty columns)
-- ✅ Merges split columns for multi-word cells
-- ✅ Saves a cleaned CSV + debug visualization
-- ✅ Fully offline (no paid APIs)
+- Works on tables **without grid lines**
+- Handles scans / phone photos / screenshots
+- Removes false columns (units, punctuation, empty columns)
+- Merges split columns for multi-word cells
+- Saves a cleaned CSV + debug visualization
+- Fully offline (no paid APIs)
 
 ---
 
@@ -57,14 +57,19 @@ Python deps:
 pip install opencv-python pytesseract pandas numpy matplotlib
 
 ```
-from table_extraction import extract_table_from_image
 
-df = extract_table_from_image(
-    "data/table.png",
-    csv_path="output/table_clean.csv",
-    figure_path="output/table_debug.png",
-    show_figure=True,
-)
+### Clone the repository
+```bash
+git clone https://github.com/akaawase-bernard/Table-Extraction-from-Images.git
+cd Table-Extraction-from-Images
 
-print(df)
+python table_extraction.py
 ```
+
+![Summary](output/eg.png)
+
+## Video Walkthrough
+
+The implementation details, and example results is available here:
+🎥 https://youtu.be/hykPp8wBebY
+
