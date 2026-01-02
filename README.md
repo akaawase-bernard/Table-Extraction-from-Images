@@ -1,5 +1,6 @@
-# Table Extraction from Images (No Grid Lines)
+# Table Extraction from Images (No Grid Lines Required)
 
+![Summary](output/eg.png)
 Extract structured tables from **scanned pages, textbook photos, screenshots, and PDFs-as-images** — even when the table has **no vertical/horizontal borders**.
 
 Most “table OCR” approaches depend on visible grid lines (or perfect PDF text). In real documents, tables are often just **aligned text**, which causes common failures:
@@ -66,7 +67,6 @@ cd Table-Extraction-from-Images
 python table_extraction.py
 ```
 
-![Summary](output/eg.png)
 
 ## Video Walkthrough
 
